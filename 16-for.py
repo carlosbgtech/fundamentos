@@ -25,3 +25,9 @@ total = 0
 for i in range(movieRating):
     note = float(input("Digite a nota para o filme:\n"))
     total += note
+    
+if movieRating > 0:
+    average = total / movieRating
+else:
+    average = 0
+print(f"A média das avaliações para o filme '{movieName}' é: {average:.2f}")

@@ -23,3 +23,22 @@ while index < len(movieList):
         continue
     print(movieList[index])
     index += 1
+    
+# 4 - Avaliação do Filme com While
+movieName = input("Digite o nome do filme:\n")
+movieRating = int(input("Digite quantas avaliações deseja fazer:\n"))
+
+total = 0
+count = 0
+
+
+while count < movieRating:
+    note = float(input(f"Digite a nota para o filme:\n"))
+    total += note
+    count += 1
+
+if movieRating > 0:
+    average = total / movieRating
+else:
+    average = 0
+print(f"A média das avaliações para o filme '{movieName}' é: {average:.2f}")
